@@ -1,0 +1,51 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;800&display=swap');
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  position: relative;
+  font-weight: normal;
+  user-select: none;
+}
+
+html {
+  font-size: 62.5%;
+  
+}
+body {
+  min-height: 100vh;
+  transition: color 0.5s, background 0.5s;
+  line-height: 1.6;
+  font-family: 'Poppins', sans-serif;
+  background: #EE4E34;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+
+button {
+  transition: color 0.3s ease, background 0.3s ease;
+
+ /* This section calls the slideInFromLeft animation we defined above */
+ animation: 1s ease 1 slideInFromLeft;
+ 
+}
+
+@keyframes slideInFromLeft {
+  0% {
+    transform: translateX(-400%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+@keyframes slideInFromTop {
+  0% {
+    transform: translateY(-100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
