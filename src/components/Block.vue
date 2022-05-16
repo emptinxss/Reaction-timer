@@ -42,9 +42,15 @@ export default {
     width: 400px;
     border-radius: 20px;
     background: #0faf87;
-    color: white;
-    text-align: center;
     padding: 100px 0;
     margin: 40px auto;
+}
+
+@media screen and (max-width:405px) {
+    .block {
+    width: 100%;
+    padding: 50px 0;
+    margin: auto;
+}
 }
 </style>
